@@ -76,3 +76,10 @@ def recommend_breaker(current):
         if size >= design_current:
             return size
     return BREAKER_SIZES[-1]
+Get endpoint
+@app.route("/info")
+def info():
+    return jsonify({
+        "phases": [1, 3],
+        "description": "Electrical calculation API"
+    })
