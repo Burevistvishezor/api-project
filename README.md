@@ -47,3 +47,33 @@ Body:
 выбор 220 / 230 / 400
 
 👉 это + к профессионализму
+# ⚡ Electrical Calculator API
+
+## 📌 Description
+REST API for calculating electrical parameters.
+
+## ⚙️ Features
+- Current calculation
+- Breaker selection
+- Cable selection
+
+## 📡 Endpoint
+
+POST /calculate
+
+### Request:
+{
+  "power": 5,
+  "phase": 1
+}
+
+### Response:
+{
+  "current": 27.17,
+  "breaker": 32,
+  "cable_mm2": 4
+}
+
+## ▶️ Run
+pip install flask
+python app.py
