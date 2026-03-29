@@ -38,3 +38,12 @@ Body:
 ## ⚠️ Notes
 - This is a simplified calculator
 - Real cable selection depends on installation method, temperature and standards
+Сейчас:
+
+230 / 400 фиксировано
+
+Можно добавить:
+
+выбор 220 / 230 / 400
+
+👉 это + к профессионализму
