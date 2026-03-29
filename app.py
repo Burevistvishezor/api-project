@@ -70,3 +70,9 @@ if power <= 0:
 
 if __name__ == "__main__":
     app.run(debug=True)
+def recommend_breaker(current):
+    design_current = current * 1.25
+    for size in BREAKER_SIZES:
+        if size >= design_current:
+            return size
+    return BREAKER_SIZES[-1]
