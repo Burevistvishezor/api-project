@@ -1,0 +1,17 @@
+Login
+
+POST /login
+
+Profile (protected)
+
+GET /profile
+
+Create Task
+
+POST /task
+
+Get Tasks
+
+GET /tasks
+
+▶️ Run project
