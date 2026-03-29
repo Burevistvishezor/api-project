@@ -77,3 +77,7 @@ POST /calculate
 ## ▶️ Run
 pip install flask
 python app.py
+## ⚠️ Engineering Notes
+- Calculations are simplified
+- Real selection depends on installation method
+- Safety factor applied to breaker selection
