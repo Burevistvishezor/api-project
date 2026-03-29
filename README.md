@@ -35,3 +35,6 @@ Body:
   "username": "test",
   "password": "123"
 }
+## ⚠️ Notes
+- This is a simplified calculator
+- Real cable selection depends on installation method, temperature and standards
