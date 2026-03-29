@@ -47,8 +47,14 @@ def calculate():
     power = data.get("power")
     phase = data.get("phase")
 
-    if not power or not phase:
-        return jsonify({"error": "power and phase required"}), 400
+    if power is None or phase is None:
+    return jsonify({"error": "power and phase required"}), 400
+
+if phase not in [1, 3]:
+    return jsonify({"error": "phase must be 1 or 3"}), 400
+
+if power <= 0:
+    return jsonify({"error": "power must be > 0"}), 400
 
     current = calculate_current(power, phase)
     breaker = recommend_breaker(current)
@@ -64,5 +70,3 @@ def calculate():
 
 if __name__ == "__main__":
     app.run(debug=True)
-if not power or not phase:
-    return jsonify({"error": "power and phase required"}), 400
