@@ -64,3 +64,5 @@ def calculate():
 
 if __name__ == "__main__":
     app.run(debug=True)
+if not power or not phase:
+    return jsonify({"error": "power and phase required"}), 400
